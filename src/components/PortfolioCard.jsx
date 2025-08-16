@@ -98,33 +98,29 @@ const PortfolioCard = ({ portfolio }) => {
 
   return (
     <article className="group">
-      <button 
-        className="w-full h-full glass-card rounded-card p-6 hover-lift border-sweep focus:outline-none focus:ring-2 focus:ring-zest-orange focus:ring-offset-2 focus:ring-offset-zest-background transition-all duration-300 hover:orange-glow active:scale-95"
-        aria-label={`Learn more about ${portfolio.title} portfolio`}
-      >
-        {/* Icon Badge */}
-        <div className="flex justify-center mb-4">
-          <div className="w-16 h-16 bg-gradient-to-br from-zest-orange/20 to-zest-orange-light/20 rounded-full flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-zest-orange/40 group-hover:to-zest-orange-light/40 transition-all duration-300">
-            <div className="text-zest-text-secondary group-hover:text-zest-orange transition-colors duration-300">
-              <IconComponent />
-            </div>
+      <button className="w-full p-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-orange-500/20 rounded-2xl hover:border-orange-400/50 transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 text-left focus:outline-none focus:ring-2 focus:ring-orange-400 shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden">
+        
+        {/* Glow effect on hover */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        
+        <div className="relative flex flex-col items-center text-center space-y-6">
+          <div className="w-20 h-20 text-orange-400 group-hover:text-orange-300 transition-all duration-500 group-hover:scale-110 relative">
+            <IconComponent className="w-full h-full drop-shadow-lg" />
+            <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-200 transition-colors duration-300">
+              {portfolio.title}
+            </h3>
+            <p className="text-sm text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
+              {portfolio.description}
+            </p>
           </div>
         </div>
-
-        {/* Title */}
-        <h3 className="text-lg font-bold text-zest-text-primary mb-3 uppercase tracking-wide leading-tight">
-          {portfolio.title}
-        </h3>
-
-        {/* Description */}
-        <p className="text-sm text-zest-text-muted leading-relaxed group-hover:text-zest-text-secondary transition-colors duration-300">
-          {portfolio.description}
-        </p>
-
-        {/* Hover indicator */}
-        <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="h-0.5 w-12 bg-gradient-orange rounded-full mx-auto"></div>
-        </div>
+        
+        {/* Corner accent */}
+        <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-orange-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </button>
     </article>
   );

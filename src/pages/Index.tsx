@@ -1,23 +1,13 @@
-import StaticBackground from '../components/StaticBackground';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
 import PortfolioGrid from '../components/PortfolioGrid';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import ZestBackground from '../components/ZestBackground';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-fixed bg-zest-background relative">
-      <StaticBackground />
-      <Navbar />
-      <main>
-        <Hero />
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      <ZestBackground />
+      <main className="relative z-10">
         <PortfolioGrid />
-        <About />
-        <Contact />
       </main>
-      <Footer />
     </div>
   );
 };
