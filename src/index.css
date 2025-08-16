@@ -56,7 +56,8 @@
 @layer components {
   /* Glass Card Base */
   .glass-card {
-    @apply bg-gradient-to-br from-white/8 to-white/4 backdrop-blur-md border border-white/10;
+    @apply backdrop-blur-md border border-white/10;
+    background: var(--gradient-card);
   }
   
   /* Orange Glow Effect */
