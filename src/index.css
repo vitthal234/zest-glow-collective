@@ -42,10 +42,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  
   html {
     scroll-behavior: smooth;
   }
@@ -148,15 +144,5 @@
   }
   50% {
     box-shadow: 0 0 40px hsl(var(--zest-orange))/40;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
   }
 }
