@@ -98,22 +98,22 @@ const PortfolioCard = ({ portfolio }) => {
 
   return (
     <article className="group">
-      <button className="w-full p-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-orange-500/20 rounded-2xl hover:border-orange-400/50 transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 text-left focus:outline-none focus:ring-2 focus:ring-orange-400 shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden">
+      <button className="w-full h-64 p-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-orange-500/20 rounded-2xl hover:border-orange-400/50 transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 text-left focus:outline-none focus:ring-2 focus:ring-orange-400 shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden">
         
         {/* Glow effect on hover */}
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         
-        <div className="relative flex flex-col items-center text-center space-y-6">
+        <div className="relative flex flex-col items-center text-center h-full justify-center space-y-6">
           <div className="w-20 h-20 text-orange-400 group-hover:text-orange-300 transition-all duration-500 group-hover:scale-110 relative">
             <IconComponent className="w-full h-full drop-shadow-lg" />
             <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
           
-          <div>
+          <div className="transition-all duration-500">
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-200 transition-colors duration-300">
               {portfolio.title}
             </h3>
-            <p className="text-sm text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
+            <p className="text-sm text-gray-300 leading-relaxed group-hover:text-white transition-all duration-500 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 max-h-0 group-hover:max-h-20 overflow-hidden">
               {portfolio.description}
             </p>
           </div>

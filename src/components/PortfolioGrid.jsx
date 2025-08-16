@@ -7,13 +7,13 @@ const PortfolioGrid = () => {
       <div className="max-w-7xl mx-auto w-full">
         {/* ZEST '26 Header */}
         <div className="text-center mb-20">
-          <h1 className="text-7xl sm:text-8xl lg:text-9xl font-black mb-6">
-            <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+          <h1 className="text-7xl sm:text-8xl lg:text-9xl font-black mb-6 tracking-wider">
+            <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-2xl">
               ZEST
             </span>
-            <span className="text-white ml-4">'26</span>
+            <span className="text-white ml-4 drop-shadow-2xl">'26</span>
           </h1>
-          <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto mb-8"></div>
+          <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto mb-8 shadow-lg shadow-orange-500/50"></div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Our <span className="text-orange-400">Portfolios</span>
           </h2>
